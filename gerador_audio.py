@@ -3,7 +3,7 @@ from gtts import gTTS
 from google.colab import files
 
 # Texto que será transformado em áudio
-texto = """
+texto = """.
 
 """
 
