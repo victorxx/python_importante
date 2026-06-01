@@ -1,0 +1,15 @@
+pessoa={
+    'nome':'felipe',
+    'idade':23,
+    'profissao':'dev',
+    'interesses':['python','progrmacao'],
+    'pet':{
+        'nome':'loki',
+        'idade':1,
+        'peso':'2kg'
+    }
+}
+buscar=pessoa.get('nome')
+interesses=pessoa.get('interesses')[0]
+print(interesses)
+print(buscar)
