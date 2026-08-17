@@ -1,0 +1,24 @@
+numero_mulher_maior = 0
+numero_homem_maior = 0
+
+print("CADASTRANDO PESSOAS")
+
+while True:
+    print("-" * 30)
+
+    idade = int(input("Qual é sua idade? "))
+    sexo = input("Qual é o seu sexo? ").strip().lower()
+
+    if idade >= 18:
+        if sexo == "m":
+            numero_mulher_maior += 1
+        elif sexo == "h":
+            numero_homem_maior += 1
+
+    continuar = input("Deseja continuar? [S/N] ").strip().lower()
+
+    if continuar != "s":
+        break
+
+print(f"Mulheres maiores de idade: {numero_mulher_maior}")
+print(f"Homens maiores de idade: {numero_homem_maior}")
