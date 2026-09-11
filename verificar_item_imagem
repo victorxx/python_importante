@@ -1,0 +1,19 @@
+!pip install -q easyocr
+
+import easyocr
+from google.colab import files
+
+produtos = ["sonho de valsa", "chocolate garoto", "bis", "oreo"]
+
+arquivo = files.upload()
+nome = next(iter(arquivo))
+
+reader = easyocr.Reader(["pt"])
+resultado = reader.readtext(nome)
+
+for item in resultado:
+    texto = item[1].lower()
+    
+    for produto in produtos:
+        if produto in texto:
+            print("Produto encontrado:", produto)
