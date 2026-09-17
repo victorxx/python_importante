@@ -1,0 +1,12 @@
+from gtts import gTTS
+
+texto = '''
+
+'''
+print("Começando...")
+lingua = "pt-br"
+
+tts = gTTS(text=texto, lang=lingua)
+tts.save(r"C:\Users\xxvitaoxx\Downloads\audio.mp3")
+
+print("Áudio criado com sucesso!")
